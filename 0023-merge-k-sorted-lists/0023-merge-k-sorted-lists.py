@@ -29,6 +29,6 @@ class Solution:
             lists[i + 1] = mergeTwoList(lists[i], lists[i + 1])
        
     
-        return lists[len(lists) - 1]
+        return lists.pop()
         
         
