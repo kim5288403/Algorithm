@@ -5,7 +5,7 @@ class Solution:
         for i in range(len(nums)):
             for j in range(1, nums[i] + 1):
                 if i + j >= len(nums):
-                    continue
+                    break
                 if dp[i + j] == 0 :
                     dp[i + j] = dp[i] + 1
         
